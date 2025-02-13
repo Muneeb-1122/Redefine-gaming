@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- gsap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="hero-section">
+        <nav id="navbar" class="flex items-center justify-between rounded-xl">
+            <div class="left-nav flex gap-[20px]">
+                <div class="profile-icon w-[40px] rounded-full"></div>
+                <button id="primary-btn" class="text-sm">Products
+                    <span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny"
+                            viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.368 19.102c.349 1.049 1.011 1.086 1.478.086l5.309-11.375c.467-1.002.034-1.434-.967-.967l-11.376 5.308c-1.001.467-.963 1.129.085 1.479l4.103 1.367 1.368 4.102z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="right-nav flex aligns-center gap-[20px]">
+                <ul class="flex gap-5 text-[12px] font-bold text-zinc-600 uppercase">
+                    <li>
+                        <a href="#">Nexus</a>
+                    </li>
+                    <li>
+                        <a href="#">Vault</a>
+                    </li>
+                    <li>
+                        <a href="#">Prologue</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <button id="audioButton" class="audio-button">
+                    <audio id="audio" src="./audio/loop.mp3" loop autoplay></audio>
+                    <div class="indicator"></div>
+                </button>
+            </div>
+        </nav>
+        <div class="hero-top-text absolute text-white">
+            <h1>redefine</h1>
+            <p class="text-[1.3vw] w-[40%]">Enter the Metagame Layer Unleash the Play Economy</p>
+            <button class="secondary-btn flex">
+                <span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny"
+                        viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.368 19.102c.349 1.049 1.011 1.086 1.478.086l5.309-11.375c.467-1.002.034-1.434-.967-.967l-11.376 5.308c-1.001.467-.963 1.129.085 1.479l4.103 1.367 1.368 4.102z">
+                        </path>
+                    </svg>
+                </span>
+                Watch Tailer
+            </button>
+        </div>
+        <div class="btm-hero-text absolute top-[70%] text-white right-[3vw]">
+            <h1>Gaming</h1>
+        </div>
+        <div class="all-boxes">
+            <div class="box"></div>
+            <video class="background-video" autoplay loop muted>
+                <source src="videos/hero-1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div id="section-2" class="min-h-[100vh] bg-[#DFDFF0] flex flex-col items-center text-center gap-[3vw] overflow-hidden">
+        <h5 class="text-sm">Welcome to Zentry</h5>
+        <h1>Discover the world's largest shared adventure</h1>
+        <div class="section-2-img-text-container flex flex-col items-center justify-center">
+            <div class="section-2-img flex items-center justify-center"></div>
+            <div class="section-2-btm text-center">
+                <h3>The Game of Games begins—your life, now an epic MMORPG</h3>
+                <p class="text-zinc-600">Zentry unites every player from countless games and platforms, both digital and physical, into a unified Play Economy.</p>
+            </div>
+        </div>
+    </div>
+    <div id="section-3" class="min-h-screen flex flex-col bg-black">
+        <div class="section-3-top h-[40vh] text-white flex aligns-center justify-center flex-col">
+            <h3>Into the Metagame Layer</h3>
+            <p class="text-zinc-400 w-[40%] text-[1.2vw]">Immerse yourself in a rich and ever-expanding universe where a vibrant array of products converge into an interconnected overlay experience on your world.</p>
+        </div>
+        <div class="section-3-bottom min-h-[100vh] flex flex-col gap-[1rem]">
+            <!-- Div 1 -->
+            <div class="all-div div-1 w-full h-[50vh] bg-white relative overflow-hidden">
+                <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+                    <source src="./videos/feature-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content w-full h-full flex flex-col justify-start items-start text-left p-8">
+                    <h2 class="text-[4vw] text-zinc-400">Radiant</h2>
+                    <p class="w-[60%] text-white">
+                        A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure.
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Container for Div 2, 3, 4 -->
+            <div class="div-2-3-4-container h-[100vh] flex gap-[1rem]">
+                <!-- Div 2 -->
+                <div class="all-div div-2 w-[45vw] h-full bg-white relative overflow-hidden">
+                    <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+                        <source src="./videos/feature-2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content w-full h-full flex flex-col justify-start items-start text-left p-8">
+                        <h2 class="text-[4vw] text-zinc-400">Innovate</h2>
+                        <p class="w-[60%] text-white">
+                            Explore new gaming dimensions with seamless Web3 integration.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Div 3 & 4 Container -->
+                <div class="div-3-4-container w-[50%] h-full flex gap-[1rem] flex-col">
+                    <!-- Div 3 -->
+                    <div class="all-div div-3 w-full h-[48%] bg-white relative overflow-hidden">
+                        <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+                            <source src="./videos/feature-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content w-full h-full flex flex-col justify-start items-start text-left p-8">
+                            <h2 class="text-[4vw] text-zinc-400">Connect</h2>
+                            <p class="w-[60%] text-white">
+                                Link with gamers worldwide and share your journey.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Div 4 -->
+                    <div class="all-div div-4 w-full h-[48%] bg-white relative overflow-hidden">
+                        <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+                            <source src="./videos/feature-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content w-full h-full flex flex-col justify-start items-start text-left p-8">
+                            <h2 class="text-[4vw] text-zinc-400">Evolve</h2>
+                            <p class="w-[60%] text-white">
+                                Earn rewards as you progress through your favorite games.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
