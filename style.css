@@ -164,13 +164,13 @@ nav ul li {
     position: absolute;
     top: 60%;
     left: 50%;
-    width: 25%;
-    height: 45%;
     transform: translate(-50%, -50%);
     transition: opacity 0.5s ease-in-out, z-index 0.3s ease-in-out;
     opacity: 0;
     z-index: 2;
     border-radius: 30px;
+    width: 25%;
+    height: 45%;
 }
  
 .box:hover {
@@ -313,3 +313,21 @@ nav ul li {
     z-index: 999;
 }
 
+svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+svg:hover {
+    color: #fff;
+}
+
+footer {
+    padding: 1rem 2rem;
+}
+
+h6 {
+    font-size: .9rem;
+    font-family: 'general';
+}
