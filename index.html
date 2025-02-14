@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div id="hero-section">
+    <div id="hero-section" class="relative">
         <nav id="navbar" class="flex items-center justify-between rounded-xl">
             <div class="left-nav flex gap-[20px]">
                 <div class="profile-icon w-[40px] rounded-full"></div>
@@ -31,7 +31,7 @@
                     </span>
                 </button>
             </div>
-            <div class="right-nav flex aligns-center gap-[20px]">
+            <div class="right-nav flex aligns-center gap-[.9rem]">
                 <ul class="flex gap-5 text-[12px] font-bold text-zinc-600 uppercase">
                     <li>
                         <a href="#">Nexus</a>
@@ -97,6 +97,7 @@
             <p class="text-zinc-400 w-[40%] text-[1.2vw]">Immerse yourself in a rich and ever-expanding universe where a vibrant array of products converge into an interconnected overlay experience on your world.</p>
         </div>
         <div class="section-3-bottom min-h-[100vh] flex flex-col gap-[1rem]">
+
             <!-- Div 1 -->
             <div class="all-div div-1 w-full h-[50vh] bg-white relative overflow-hidden">
                 <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
@@ -158,11 +159,40 @@
                     </div>
                 </div>
             </div>
+
+            <!-- container fo4 div 5, 6 -->
+            <div class="div-5-6-container w-full h-[40vh] flex gap-4">
+                <!-- Div 5 -->
+                <div class="all-div div-4 w-[48%] h-full bg-white relative overflow-hidden">
+                    <div class="content absolute top-0 left-0 w-full h-full flex flex-col justify-start items-start text-left p-8 bg-[#5724FF]">
+                        <h2 class="text-[4vw] text-zinc-400">More coming soon.</h2>
+                    </div>
+                </div>
+            
+                <!-- Div 6 -->
+                <div class="all-div div-4 w-[50%] h-full bg-white relative overflow-hidden">
+                    <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+                        <source src="./videos/feature-5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
         </div>
-        
-        
-        
     </div>
+    <div id="section-4" class="w-full h-full bg-[#DFDFF0] flex items-center justify-center text-center">
+        <div id="section-4-container" class="w-[100%], h-[100%] bg-black rounded-xl text-white flex items-center justify-center flex-col gap-4 p-8 flex-col text-center gap-[1rem] relative overflow-hidden">
+            <div class="section-4-center-text ">
+                <h5>Join Zentry</h5>
+                <h1>let's build the new era of gaming together.</h1>
+                <button class="bg-zinc-100 text-black">Contact Us</button>
+            </div>
+            <img width="25%" class="img-1 absolute" src="img/contact-1.webp" alt="">
+            <img width="40%" class="img-2 absolute"  src="img/contact-2.webp" alt="">
+            <img width="35%" height="10%" class="img-3 absolute"  src="img/contact-3.webp" alt="">
+        </div>   
+    </div>
+    
 
     <script src="script.js"></script>
 </body>

@@ -67,7 +67,6 @@ box.addEventListener("click", () => {
   allBoxVideo.play();
 });
 
-
 gsap.registerPlugin(ScrollTrigger);
 let section_2_btm = document.querySelector("section-2-btm");
 document.addEventListener("DOMContentLoaded", () => {
@@ -84,4 +83,36 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1.5,
     ease: "power2.out",
   });
+});
+
+// navbar scrolling effect
+
+gsap.to("#navbar", {
+  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+  backgroundColor: "rgba(255, 255, 255, 0.9)",
+  duration: 0.3,
+  scrollTrigger: {
+    trigger: "body",
+    start: "top+=10 top",
+    toggleActions: "play none none reverse",
+  },
+});
+
+gsap.to(".right-nav a", {
+  color: "#000",
+  scrollTrigger: {
+    trigger: "body",
+    start: "top+=10 top",
+    toggleActions: "play none none reverse",
+  },
+});
+
+gsap.to(".left-nav #primary-btn", {
+  backgroundColor: "#000",
+  color: "#fff",
+  scrollTrigger: {
+    trigger: "body",
+    start: "top+=10 top",
+    toggleActions: "play none none reverse",
+  },
 });
