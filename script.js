@@ -1,3 +1,5 @@
+// music
+
 const audioButton = document.getElementById("audioButton");
 const audio = document.getElementById("audio");
 const indicator = document.querySelector(".indicator");
@@ -67,23 +69,31 @@ box.addEventListener("click", () => {
   allBoxVideo.play();
 });
 
-gsap.registerPlugin(ScrollTrigger);
-let section_2_btm = document.querySelector("section-2-btm");
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.to(".section-2-img", {
-    scrollTrigger: {
-      trigger: ".section-2-img",
-      start: "5% 25%",
-      end: "bottom 50%",
-      scrub: true,
-    },
-    width: "100vw",
-    height: "100vh",
-    borderRadius: "0",
-    duration: 1.5,
-    ease: "power2.out",
-  });
+gsap.to(".section-2-btm", {
+  top: "20",
+  zIndex: "0",
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".section-2-btm",
+    start: "0% 10%",
+    end: "top top",
+    scrub: true,
+  }
 });
+
+gsap.to(".section-2-img", {
+  width: "100vw",
+  height: "100vh",
+  borderRadius: "0",
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".section-2-img",
+    start: "0% 10%",
+    end: "top top",
+    scrub: true,
+  }
+});
+
 
 // navbar scrolling effect
 
